@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.parent {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.child {
+    height: 75vh;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.315);
+    position: absolute;
+    border-radius: 2.5%;
+    overflow-y: auto;
+}
+
+.text-area {
+    height: 10vh;
+    width: 75%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.button {
+    height: 10vh;
+    width: 20%;
+    color: white;
+    background-color: rgb(219, 24, 219);
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+.task-container {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white ;
+    margin-right:35px;
+    
+}
+
+.task-item {
+    padding:0.5rem;
+    align-items: center;
+    font-size: 16px;
+    white-space: nowrap; 
+    overflow-x: auto;
+}
+
+.done {
+    color: white;
+    background: #a770ef;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 568px) {
+    .text-area {
+      max-width: 65%;
+    }
+  
+    .button {
+      max-width: 30%;
+    }
+  }
+
+  
+  
+  
+  
+  
+  
+  
