@@ -10,8 +10,13 @@ const Home = () => {
   };
 
   const addTask = () => {
-    setTasks(prevTasks => [...prevTasks, inputValue]);
-    setInputValue('');
+    if (inputValue.length !== 0) {
+      setTasks(prevTasks => [...prevTasks, inputValue]);
+      setInputValue('');
+    }
+    else {
+      alert('Please enter a task before adding it.');
+    }
   };
 
   const taskDone = (index) => {
