@@ -23,14 +23,14 @@ const Home = () => {
     <>
       <div className="parent">
         <div className="child">
-          <h1>To-do List</h1>
+          <h1>To Do List</h1>
           <div className="input-container " data-bs-spy="scroll">
             <input
               className="text-area"
               type="text"
               value={inputValue}
               onChange={handleInputChange}
-              placeholder="Add Your Task"
+              placeholder="Create A New Task"
             />
             <button className="button" onClick={addTask}>Add Task</button>
           </div>
